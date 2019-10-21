@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/home_dark_overlay" />
+
+    <ImageView
+        android:id="@+id/bladeLogo"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="122dp"
+        android:src="@drawable/blade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:src="@drawable/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bladeLogo" />
+
+    <TextView
+        android:id="@+id/selectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Please select:"
+        android:textColor="#C4C4C4"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <View
+        android:id="@+id/customerTextBox"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/login_sites_frames"
+        android:backgroundTint="#cc9042"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectionText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUSTOMER"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/customerTextBox"
+        app:layout_constraintLeft_toLeftOf="@id/customerTextBox"
+        app:layout_constraintRight_toRightOf="@id/customerTextBox"
+        app:layout_constraintTop_toTopOf="@id/customerTextBox" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="28dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/head"
+        app:layout_constraintBottom_toBottomOf="@id/customerTextBox"
+        app:layout_constraintLeft_toLeftOf="@id/customerTextBox"
+        app:layout_constraintTop_toTopOf="@id/customerTextBox" />
+
+    <view
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/orText"
+        app:layout_constraintTop_toBottomOf="@id/customerTextBox" />
+
+    <view
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="55dp"
+        android:backgroundTint="#fff"
+        app:layout_constraintLeft_toRightOf="@id/orText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customerTextBox" />
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="OR"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/customerTextBox" />
+
+    <View
+        android:id="@+id/barberTextBox"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/box_with_border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orText" />
+
+    <TextView
+        android:id="@+id/professionalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROFESSIONAL"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toTopOf="@id/barberTextBox"
+        app:layout_constraintBottom_toTopOf="@id/barberText"
+        app:layout_constraintLeft_toLeftOf="@id/barberTextBox"
+        app:layout_constraintRight_toRightOf="@id/barberTextBox"/>
+
+    <TextView
+        android:id="@+id/barberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barbers and Barbershops"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintTop_toBottomOf="@id/professionalText"
+        app:layout_constraintBottom_toBottomOf="@id/barberTextBox"
+        app:layout_constraintLeft_toLeftOf="@id/barberTextBox"
+        app:layout_constraintRight_toRightOf="@id/barberTextBox"/>
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/scissors"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@id/barberTextBox"
+        app:layout_constraintBottom_toBottomOf="@id/barberTextBox"
+        app:layout_constraintLeft_toLeftOf="@id/barberTextBox"/>
+
+</android.support.constraint.ConstraintLayout>

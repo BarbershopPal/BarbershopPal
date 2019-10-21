@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#363636" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tutorialLogo2"
+        android:layout_width="0dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="@dimen/margin_big"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/tutorial_logo_2"/>
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simply book and manage\n appointments via the app."
+        android:textColor="#E5E5E5"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintTop_toBottomOf="@id/tutorialLogo2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
