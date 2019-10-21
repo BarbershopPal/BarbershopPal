@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/notificationCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/notificationFrame"
+                android:layout_width="329dp"
+                android:layout_height="69dp"
+                android:background="#3B5998"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgNotification"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/create_account_image"
+                app:layout_constraintBottom_toBottomOf="@id/notificationFrame"
+                app:layout_constraintLeft_toLeftOf="@id/notificationFrame"
+                app:layout_constraintTop_toTopOf="@id/notificationFrame" />
+
+            <TextView
+                android:id="@+id/barberShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="Smart Cut"
+                android:textColor="#FFFEFE"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@id/imgNotification"
+                app:layout_constraintTop_toTopOf="@id/imgNotification" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="9:00 AM | "
+                android:textColor="#94FFFFFF"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@id/appointment"
+                app:layout_constraintLeft_toLeftOf="@id/barberShopName"
+                app:layout_constraintTop_toBottomOf="@id/barberShopName" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Mon 24th May 2019"
+                android:textColor="#94FFFFFF"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@id/appointment"
+                app:layout_constraintLeft_toLeftOf="@id/barberShopName"
+                app:layout_constraintTop_toBottomOf="@id/barberShopName" />
+
+            <TextView
+                android:id="@+id/appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Appointment booked with James Fisher"
+                android:textColor="#94FFFFFF"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@id/imgNotification"
+                app:layout_constraintLeft_toLeftOf="@id/barberShopName"
+                app:layout_constraintTop_toBottomOf="@id/time" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

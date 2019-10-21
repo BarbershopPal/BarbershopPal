@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Barbershop Pal</string>
+
+    <string name="skip">Skip</string>
+
+    <string name="forgot_my_password">Forgot my password?</string>
+
+    <string name="slide_text_one">Barbershop Pal helps you to locate local\n barbers in your area with a touch of a button</string>
+    <string name="slide_text_two">Find a barbershop best suited for you\nand choose your preference in barber</string>
+
+</resources>

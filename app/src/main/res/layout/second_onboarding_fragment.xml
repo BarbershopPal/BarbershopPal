@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tutorialLogo2"
+        android:layout_width="0dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="@dimen/margin_big"
+        android:src="@drawable/second_page_onboarding_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:gravity="center"
+        android:text="Find a barbershop best suited to you\nand choose your preference in a barber"
+        android:textColor="#E5E5E5"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tutorialLogo2" />
+
+</android.support.constraint.ConstraintLayout>
