@@ -1,4 +1,4 @@
-package com.example.barbershoppal
+package com.example.barbershoppal.ui.screen.adapters
 
 import android.support.v7.widget.RecyclerView
 import android.widget.Adapter

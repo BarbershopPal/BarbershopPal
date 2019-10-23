@@ -1,4 +1,4 @@
-package com.example.barbershoppal.notifications
+package com.example.barbershoppal.ui.screen.notifications
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

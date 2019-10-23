@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/selectionFragment"
-        android:name="com.example.barbershoppal.SelectionFragment"
+        android:name="com.example.barbershoppal.ui.screen.signIn.SelectionFragment"
         android:label="SelectionFragment"
         tools:layout="@layout/selection_fragment"/>
 
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.barbershoppal.SignInFragment"
+        android:name="com.example.barbershoppal.ui.screen.signIn.SignInFragment"
         android:label="SignInFragment"
         tools:layout="@layout/sign_in_fragment">
         <action
@@ -28,14 +28,8 @@
         tools:layout="@layout/create_account_fragment" />
 
     <fragment
-        android:id="@+id/notificationFragment"
-        android:name="com.example.barbershoppal.NotificationsFragment"
-        android:label="Notificationsfragment"
-        tools:layout="@layout/notifications_fragment" />
-
-    <fragment
         android:id="@+id/notificationHostFragment"
-        android:name="com.example.barbershoppal.notifications.NotificationsHostFragment"
+        android:name="com.example.barbershoppal.ui.screen.notifications.NotificationsHostFragment"
         android:label="NotificationHostFragment"
         tools:layout="@layout/notifications_host_fragment" />
 

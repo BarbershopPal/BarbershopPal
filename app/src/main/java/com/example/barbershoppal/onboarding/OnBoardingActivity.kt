@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 
 import android.support.v7.app.AppCompatActivity
-import com.example.barbershoppal.ImageFragmentPagerAdapter
+import com.example.barbershoppal.ui.screen.adapters.ImageFragmentPagerAdapter
 import com.example.barbershoppal.MainActivity
 import com.example.barbershoppal.R
 import kotlinx.android.synthetic.main.onboarding_activity.*
@@ -16,7 +16,9 @@ class OnBoardingActivity : AppCompatActivity() {
         setContentView(R.layout.onboarding_activity)
 
         val pagerAdapter =
-            ImageFragmentPagerAdapter(supportFragmentManager)
+            ImageFragmentPagerAdapter(
+                supportFragmentManager
+            )
         viewPager.adapter = pagerAdapter
         indicatorDots.setupWithViewPager(viewPager, true)
 

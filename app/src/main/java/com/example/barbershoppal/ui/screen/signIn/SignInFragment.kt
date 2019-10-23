@@ -1,4 +1,4 @@
-package com.example.barbershoppal
+package com.example.barbershoppal.ui.screen.signIn
 
 
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.navigation.Navigation
+import com.example.barbershoppal.R
 import kotlinx.android.synthetic.main.sign_in_fragment.*
 
 class SignInFragment : Fragment() {

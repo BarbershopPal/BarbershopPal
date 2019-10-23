@@ -1,6 +1,5 @@
-package com.example.barbershoppal.notifications
+package com.example.barbershoppal.ui.screen.notifications
 
-import android.content.Context
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
