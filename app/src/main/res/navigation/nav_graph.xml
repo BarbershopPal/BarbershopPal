@@ -33,4 +33,10 @@
         android:label="Notificationsfragment"
         tools:layout="@layout/notifications_fragment" />
 
+    <fragment
+        android:id="@+id/notificationHostFragment"
+        android:name="com.example.barbershoppal.notifications.NotificationsHostFragment"
+        android:label="NotificationHostFragment"
+        tools:layout="@layout/notifications_host_fragment" />
+
 </navigation>

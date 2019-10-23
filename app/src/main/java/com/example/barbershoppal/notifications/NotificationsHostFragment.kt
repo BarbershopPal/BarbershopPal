@@ -5,14 +5,12 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.barbershoppal.MainActivity
 import com.example.barbershoppal.R
+import kotlinx.android.synthetic.main.notifications_host_fragment.*
 import javax.inject.Inject
 
 class NotificationsHostFragment: Fragment() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.notifications_host_fragment, container, false)
@@ -20,8 +18,12 @@ class NotificationsHostFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setUpViewPager()
     }
 
-    val pagerAdapter = NotificationsHostAdapter(supportFragmentManager)
+    private fun setUpViewPager() {
+        viewPager.adapter = NotificationsHostAdapter(childFragmentManager)
+
+    }
 
 }
