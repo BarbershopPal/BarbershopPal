@@ -34,7 +34,7 @@ open class Fragment : Fragment() {
         @MenuRes menu: Int = -1,
         onMenuItemClick: (itemId: Int) -> Unit = {}
     ) {
-        val toolbar: Toolbar? = view?.findViewById(R.id.toolbar)
+        val toolbar: android.support.v7.widget.Toolbar? = view?.findViewById(R.id.toolbar)
         toolbar?.let {
             toolbar.title = title
 
@@ -48,7 +48,7 @@ open class Fragment : Fragment() {
                 toolbar.inflateMenu(menu)
             }
 
-            toolbar.setOnMenuItemClickListener(Toolbar.OnMenuItemClickListener {
+            toolbar.setOnMenuItemClickListener(android.support.v7.widget.Toolbar.OnMenuItemClickListener {
                 onMenuItemClick(it.itemId)
                 true
             })

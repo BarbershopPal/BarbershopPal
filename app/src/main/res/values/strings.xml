@@ -2,6 +2,12 @@
     <string name="app_name">Barbershop Pal</string>
 
     <string name="skip">Skip</string>
+    <string name="cancel">CANCEL</string>
+    <string name="edit">EDIT</string>
+    <string name="delete">DELETE</string>
+
+    <string name="upcoming_bookings">Upcoming bookings</string>
+    <string name="previous_bookings">Previous bookings</string>
 
     <string name="forgot_my_password">Forgot my password?</string>
 

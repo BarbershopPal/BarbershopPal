@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/btnOnBoardingSkip"
         app:tabGravity="center"
-        app:tabBackground="@drawable/tab_selector"
+        app:tabBackground="@drawable/on_boarding_tab_selector"
         app:tabIndicatorHeight="0dp"/>
 
     <View

@@ -2,7 +2,15 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
+
     <color name="colorAccent">#D81B60</color>
+    <color name="red">#99DB3236</color>
+
     <color name="active_dots_orange">#F2CC9042</color>
+    <color name="gold">#A8BA8F4B</color>
+
+    <color name="white">#fff</color>
     <color name="inactive_dots_grey">#EDE9E8</color>
+
+    <color name="brown">#363636</color>
 </resources>
