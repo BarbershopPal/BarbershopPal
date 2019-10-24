@@ -12,11 +12,18 @@ import android.widget.Toolbar
 import androidx.navigation.fragment.findNavController
 import com.example.barbershoppal.MainActivity
 import com.example.barbershoppal.R
+import com.example.barbershoppal.lib.core.ObserverLifecycleInterface
 import java.util.*
 
 open class Fragment : Fragment() {
 
+    private val lifecycleObservers = LinkedList<ObserverLifecycleInterface>()
+
     val baseActivity get() = activity as Activity
+
+    fun addObserver(o: ObserverLifecycleInterface) {
+        lifecycleObservers.add(o)
+    }
 
     @JvmOverloads
     protected fun setToolbar(
