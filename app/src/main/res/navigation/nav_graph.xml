@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/notificationHostFragment"
-        android:name="com.example.barbershoppal.ui.screen.notifications.NotificationsHostFragment"
+        android:name="com.example.barbershoppal.ui.screen.bookings.MyBookingsHostFragment"
         android:label="NotificationHostFragment"
         tools:layout="@layout/notifications_host_fragment" />
 

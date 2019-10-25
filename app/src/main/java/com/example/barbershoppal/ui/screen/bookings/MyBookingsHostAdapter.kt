@@ -1,10 +1,10 @@
-package com.example.barbershoppal.ui.screen.notifications
+package com.example.barbershoppal.ui.screen.bookings
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 
-class NotificationsHostAdapter(
+class MyBookingsHostAdapter(
     fragmentManager: FragmentManager
 ) : FragmentPagerAdapter(fragmentManager) {
 

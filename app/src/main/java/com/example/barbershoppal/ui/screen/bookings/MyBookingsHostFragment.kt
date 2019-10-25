@@ -1,4 +1,4 @@
-package com.example.barbershoppal.ui.screen.notifications
+package com.example.barbershoppal.ui.screen.bookings
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import com.example.barbershoppal.R
 import com.example.barbershoppal.ui.screen.Fragment
 import kotlinx.android.synthetic.main.notifications_host_fragment.*
 
-class NotificationsHostFragment: Fragment() {
+class MyBookingsHostFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.notifications_host_fragment, container, false)
@@ -21,7 +21,7 @@ class NotificationsHostFragment: Fragment() {
     }
 
     private fun setUpViewPager() {
-        viewPager.adapter = NotificationsHostAdapter(childFragmentManager)
+        viewPager.adapter = MyBookingsHostAdapter(childFragmentManager)
         notificationTabLayout.setupWithViewPager(viewPager)
     }
 

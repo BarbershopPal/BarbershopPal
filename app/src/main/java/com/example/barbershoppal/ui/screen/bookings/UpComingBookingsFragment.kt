@@ -1,4 +1,4 @@
-package com.example.barbershoppal.ui.screen.notifications
+package com.example.barbershoppal.ui.screen.bookings
 
 import android.os.Bundle
 import android.view.LayoutInflater

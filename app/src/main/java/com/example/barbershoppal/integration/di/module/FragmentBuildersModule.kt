@@ -2,9 +2,9 @@ package com.example.barbershoppal.integration.di.module
 
 import com.example.barbershoppal.ui.screen.signIn.SelectionFragment
 import com.example.barbershoppal.ui.screen.signIn.SignInFragment
-import com.example.barbershoppal.ui.screen.notifications.NotificationsHostFragment
-import com.example.barbershoppal.ui.screen.notifications.PreviousBookingsFragment
-import com.example.barbershoppal.ui.screen.notifications.UpComingBookingsFragment
+import com.example.barbershoppal.ui.screen.bookings.MyBookingsHostFragment
+import com.example.barbershoppal.ui.screen.bookings.PreviousBookingsFragment
+import com.example.barbershoppal.ui.screen.bookings.UpComingBookingsFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -25,5 +25,5 @@ internal abstract class FragmentBuildersModule {
     abstract fun contributePreviousBookingsFragment(): PreviousBookingsFragment
 
     @ContributesAndroidInjector
-    abstract fun contributeNotificationHostFragment(): NotificationsHostFragment
+    abstract fun contributeNotificationHostFragment(): MyBookingsHostFragment
 }
