@@ -28,12 +28,9 @@ class MyBookingsHostFragment: Fragment() {
     private fun setUpToolbar() {
         setToolbar(
             view = toolbar,
-            title = "My Bookings",
+            title = resources.getString(R.string.my_bookings),
             icon = R.drawable.ic_back
         )
     }
 
-    private fun string(text: String) {
-        toString()
-    }
 }
